@@ -4,13 +4,14 @@ import Question from '../Question/Question';
 
 const Quiz = () => {
     const quizs = useLoaderData()
-    console.log(quizs.data);
+
     const { name, questions
     } = quizs.data
     return (
-        <div className='mt-36 text-indigo-400 font-mono'>
+        <div className='mt-36 text-indigo-400 font-mono"
+        '>
             <h1 className='text-5xl font-bold'>Quiz Of {name}</h1>
-            <div className='mt-6'>
+            <div className="mt-12">
                 {
                     questions.map(question => <Question key={question.id} question={question} />)
                 }
