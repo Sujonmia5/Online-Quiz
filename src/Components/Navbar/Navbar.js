@@ -9,8 +9,8 @@ const Navbar = () => {
         <div className="bg-slate-50 text-indigo-500 shadow-lg">
             <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div className="relative flex items-center justify-between">
-                    <a
-                        href="/"
+                    <NavLink
+                        to="/"
                         aria-label="Company"
                         title="Company"
                         className="inline-flex items-center"
@@ -33,37 +33,37 @@ const Navbar = () => {
                         <span className="ml-2 text-xl font-bold tracking-wide text-indigo-400 uppercase">
                             Online Quiz
                         </span>
-                    </a>
+                    </NavLink>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
-                            <a
-                                href="/home"
+                            <NavLink
+                                to="/home"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700"
                             >
                                 Start Quiz
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/"
+                            <NavLink
+                                to="/quizchart"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide  transition-colors duration-200 hover:text-blue-700"
                             >
                                 Quiz Chert
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/"
+                            <NavLink
+                                to="/"
                                 aria-label="About us"
                                 title="About us"
                                 className="font-medium tracking-wide  transition-colors duration-200 hover:text-blue-700"
                             >
                                 Blog
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="lg:hidden">
@@ -93,8 +93,8 @@ const Navbar = () => {
                                 <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
-                                            <a
-                                                href="/"
+                                            <NavLink
+                                                to="/"
                                                 aria-label="Company"
                                                 title="Company"
                                                 className="inline-flex items-center"
@@ -117,7 +117,7 @@ const Navbar = () => {
                                                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                                                     Online Quiz
                                                 </span>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div>
                                             <button
@@ -138,35 +138,35 @@ const Navbar = () => {
                                     <nav>
                                         <ul className="space-y-4">
                                             <li>
-                                                <a
-                                                    href="/"
+                                                <NavLink
+                                                    to="/"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
                                                 >
                                                     Start Quiz
-                                                </a>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/"
+                                                <NavLink
+                                                    to="/quizchart"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
                                                 >
                                                     Quiz Chert
-                                                </a>
+                                                </NavLink>
                                             </li>
 
                                             <li>
-                                                <a
-                                                    href="/"
+                                                <NavLink
+                                                    to="/"
                                                     aria-label="About us"
                                                     title="About us"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
                                                 >
                                                     Blog
-                                                </a>
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </nav>

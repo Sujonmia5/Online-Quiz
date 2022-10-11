@@ -1,12 +1,15 @@
 import React from 'react';
 
-const Option = ({ option }) => {
+const Option = ({ option, btnHandler }) => {
+
     console.log(option)
     return (
-        <label for={option} className='border rounded-lg p-3 flex justify-start items-center hover:bg-indigo-100'>
-            <input type="radio" id={option} name="drone" value="dewey" />
-            <p className='ml-5' >{option}</p>
-        </label>
+        <div className='border rounded-lg p-3 flex justify-start items-center hover:bg-indigo-100' onClick={() => btnHandler(option)}>
+            <input type="radio" id={option} name="drone" value="dwey" />
+            <label for={option}>
+                <p className='ml-5 w-full' >{option}</p>
+            </label>
+        </div>
     );
 };
 
