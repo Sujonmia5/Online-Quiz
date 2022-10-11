@@ -15,7 +15,7 @@ const Question = (props) => {
 
     });
     const notify2 = () => toast("Wrong Answer", {
-
+        position: "top-center",
     });
     const notify3 = () => {
         toast(`${correctAnswer}`)
@@ -37,7 +37,7 @@ const Question = (props) => {
 
             <div className='flex justify-between'>
                 <p className='text-2xl font-semibold'>{question}</p>
-                <div onClick={() => setOpen(!open)} className='border' >
+                <div onClick={() => setOpen(!open)} >
                     {
                         open ? notify3() : <EyeIcon className='h-6 w-6' />
                     }

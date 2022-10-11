@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react'
 import Quiz from '../../assets/quiz-bump.json'
-import { Home } from '../Home/Home';
+import Exam from '../../assets/exams.json'
 
 const Header = () => {
     return (
@@ -30,6 +30,9 @@ const Header = () => {
                                 fun and fully customizable{' '}
                             </span>
                         </h2>
+                        <div className='h-44 w-60 absolute -top-10 hidden md:block -right-24 '>
+                            <Lottie animationData={Exam} loop={true} />
+                        </div>
                     </div>
                 </div>
             </div>

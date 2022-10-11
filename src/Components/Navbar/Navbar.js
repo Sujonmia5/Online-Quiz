@@ -57,7 +57,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/"
+                                to="/blog"
                                 aria-label="About us"
                                 title="About us"
                                 className="font-medium tracking-wide  transition-colors duration-200 hover:text-blue-700"
