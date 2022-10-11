@@ -139,7 +139,7 @@ const Navbar = () => {
                                         <ul className="space-y-4">
                                             <li>
                                                 <NavLink
-                                                    to="/"
+                                                    to="/home"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
@@ -160,7 +160,7 @@ const Navbar = () => {
 
                                             <li>
                                                 <NavLink
-                                                    to="/"
+                                                    to="/blog"
                                                     aria-label="About us"
                                                     title="About us"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
