@@ -3,7 +3,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid'
 export const QuizCart = ({ quiz }) => {
     const { id, name, logo, total } = quiz
     return (
-        <div className="flex p-2 flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+        <div className="flex p-2 rounded-xl flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-gray-900 text-white rounded shadow-xl group hover:shadow-2xl">
             <div className="p-4">
                 <div className="flex items-center justify-center mb-4 rounded-full bg-indigo-50">
                     <img src={logo} alt="" />
@@ -11,7 +11,7 @@ export const QuizCart = ({ quiz }) => {
             </div>
             <p className="mb-2 font-bold mx-3">{name}</p>
             <div className='flex justify-between items-center mx-2'>
-                <p className="text-sm leading-5 text-gray-900">
+                <p className="text-sm leading-5">
                     Total Quiz: {total}
                 </p>
                 <a

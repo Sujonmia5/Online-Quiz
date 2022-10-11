@@ -14,25 +14,25 @@ const RenderLineChart = () => {
                         data={data}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Area type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
+                        <XAxis dataKey="name" stroke="#FFFFFF" />
+                        <YAxis stroke="#FFFFFF" />
+                        <Tooltip stroke="#FFFFFF" />
+                        <Area type="monotone" dataKey="total" stroke="#FFFFFF" fill="#8884d8" />
                     </AreaChart>
                 </ResponsiveContainer>
             </div>
             <div className='mt-24 mx-auto w-[90%] md:w-[50%] h-[300px]'>
                 <ResponsiveContainer>
                     <ComposedChart
-                        data={data}>
-                        <CartesianGrid stroke="#f5f5f5" />
-                        <XAxis dataKey="name" scale="band" />
-                        <YAxis />
-                        <Tooltip />
+                        data={data} stroke="#FFFFFF">
+                        <CartesianGrid stroke="#FFFFFF" />
+                        <XAxis dataKey="name" scale="band" stroke="#FFFFFF" />
+                        <YAxis stroke="#FFFFFF" />
+                        <Tooltip stroke="#FFFFFF" />
                         <Legend />
-                        <Area type="monotone" dataKey="quiz" fill="#8884d8" stroke="#8884d8" />
 
-                        <Line type="monotone" dataKey="total" stroke="#8884d8" />
+                        <Area type="monotone" dataKey="quiz" fill="white" stroke="#EAC0C0" />
+                        <Line type="monotone" dataKey="total" stroke="#EAC0C0" />
                     </ComposedChart>
                 </ResponsiveContainer>
             </div>
