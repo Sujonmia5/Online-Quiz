@@ -12,7 +12,6 @@ function App() {
   const routes = createBrowserRouter([
     {
       path: '/', element: <Main />,
-      errorElement: <Error />,
       children: [
         {
           path: '/',
@@ -39,7 +38,9 @@ function App() {
           element: <Blog />
         }
       ]
-    },
+    }, {
+      path: '*', element: <Error />
+    }
   ])
   return (
     <div className="dark:bg-gray-800">
