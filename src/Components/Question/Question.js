@@ -34,7 +34,7 @@ const Question = (props) => {
 
     }
     return (
-        <div className="border mx-auto mt-8 shadow-lg w-[90%] md:w-[60%] px-8 pb-8 pt-3 font-mono">
+        <div className="border bg-gray-900 rounded shadow-blue-800 mx-auto mt-8 shadow-lg w-[90%] md:w-[60%] px-8 pb-8 pt-3 font-mono">
 
             <div className='flex justify-between'>
                 <p className='text-2xl font-semibold'>{question}</p>

@@ -47,7 +47,7 @@ const Blog = () => {
                     <div>
                         <a rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://scontent.fdac34-1.fna.fbcdn.net/v/t39.30808-1/309272493_476591194509615_5212622540766778464_n.jpg?stp=c0.25.160.160a_dst-jpg_p160x160&_nc_cat=105&ccb=1-7&_nc_sid=c6021c&_nc_eui2=AeG0JgN0plAdFm3akYyMdVZ2wV5cgicpKOzBXlyCJyko7Lbu8PhtoLj4fY-At1IrNV7GnBCmBG_DdAdP3pF11qQQ&_nc_ohc=SdGt5DGaUZkAX9x0jRT&_nc_ht=scontent.fdac34-1.fna&oh=00_AT9FBuFsnMAfDBy2EBpDhkozOjv63MzVJX5uMIpqri5QqQ&oe=6349CC84" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
-                            <Link to='https://www.linkedin.com/in/md-sujon-mia-547a51243/' className="hover:underline dark:text-gray-400">Md Sujon</Link>
+                            <p className="text-gray-200">Md Sujon</p>
                         </a>
                     </div>
                 </div>
