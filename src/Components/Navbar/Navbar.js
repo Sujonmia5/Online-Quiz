@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
     return (
         <div className="bg-gray-900 text-indigo-500 shadow-lg">
             <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -40,7 +41,7 @@ const Navbar = () => {
                                 to="/home"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700"
+                                className={({ isActive }) => isActive ? 'text-yellow-600' : 'font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700'}
                             >
                                 Start Quiz
                             </NavLink>
@@ -50,7 +51,7 @@ const Navbar = () => {
                                 to="/quizchart"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide  transition-colors duration-200 hover:text-blue-700"
+                                className={({ isActive }) => isActive ? 'text-yellow-600' : 'font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700'}
                             >
                                 Quiz Chert
                             </NavLink>
@@ -60,7 +61,7 @@ const Navbar = () => {
                                 to="/blog"
                                 aria-label="About us"
                                 title="About us"
-                                className="font-medium tracking-wide  transition-colors duration-200 hover:text-blue-700"
+                                className={({ isActive }) => isActive ? 'text-yellow-600' : 'font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700'}
                             >
                                 Blog
                             </NavLink>
@@ -73,7 +74,7 @@ const Navbar = () => {
                             className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
                             onClick={() => setIsMenuOpen(true)}
                         >
-                            <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+                            <svg className="w-5 text-white" viewBox="0 0 24 24">
                                 <path
                                     fill="currentColor"
                                     d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -142,7 +143,7 @@ const Navbar = () => {
                                                     to="/home"
                                                     aria-label="Our product"
                                                     title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
+                                                    className={({ isActive }) => isActive ? 'text-yellow-600' : 'font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700'}
                                                 >
                                                     Start Quiz
                                                 </NavLink>
@@ -152,7 +153,7 @@ const Navbar = () => {
                                                     to="/quizchart"
                                                     aria-label="Our product"
                                                     title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
+                                                    className={({ isActive }) => isActive ? 'text-yellow-600' : 'font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700'}
                                                 >
                                                     Quiz Chert
                                                 </NavLink>
@@ -163,7 +164,7 @@ const Navbar = () => {
                                                     to="/blog"
                                                     aria-label="About us"
                                                     title="About us"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700"
+                                                    className={({ isActive }) => isActive ? 'text-yellow-600' : 'font-medium tracking-wide text-indigo-400 transition-colors duration-200 hover:text-blue-700'}
                                                 >
                                                     Blog
                                                 </NavLink>
@@ -176,7 +177,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

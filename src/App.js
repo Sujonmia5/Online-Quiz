@@ -15,7 +15,9 @@ function App() {
       errorElement: <Error />,
       children: [
         {
-          path: '/', element: <Header />
+          path: '/',
+          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Home />
         },
         {
           path: '/home',

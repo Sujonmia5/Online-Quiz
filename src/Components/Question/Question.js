@@ -25,6 +25,7 @@ const Question = (props) => {
     };
 
     const btnHandler = (id) => {
+        console.log('click')
         if (id === correctAnswer) {
             notify()
         } else {
