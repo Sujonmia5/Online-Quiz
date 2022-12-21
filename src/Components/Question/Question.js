@@ -19,9 +19,9 @@ const Question = (props) => {
     });
     const notify3 = () => {
         toast(`${correctAnswer}`)
-        return (
-            <EyeSlashIcon className='h-6 w-6' />
-        )
+        console.log('click');
+        return <EyeSlashIcon className='h-6 w-6' />
+
     };
 
     const btnHandler = (id) => {
@@ -38,7 +38,7 @@ const Question = (props) => {
 
             <div className='flex justify-between'>
                 <p className='text-2xl font-semibold'>{question}</p>
-                <div onClick={() => setOpen(!open)} >
+                <div onClick={() => setOpen(!open)}>
                     {
                         open ? notify3() : <EyeIcon className='h-6 w-6' />
                     }

@@ -91,7 +91,7 @@ const Navbar = () => {
                         </button>
                         {isMenuOpen && (
                             <div className="absolute top-0 left-0 w-full z-10">
-                                <div className="p-5 bg-white border rounded shadow-sm">
+                                <div className="p-5 bg-gray-900 border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <NavLink
@@ -115,7 +115,7 @@ const Navbar = () => {
                                                     <rect x="14" y="1" width="7" height="6" />
                                                     <rect x="14" y="11" width="7" height="12" />
                                                 </svg>
-                                                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                                                <span className="ml-2 text-xl font-bold tracking-wide text-indigo-600 uppercase">
                                                     Online Quiz
                                                 </span>
                                             </NavLink>
